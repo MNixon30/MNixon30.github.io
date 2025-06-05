@@ -2,29 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Projects</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: #00bfff;
+    }
+
+    .project {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #333;
+      padding-bottom: 20px;
+    }
+
+    .branch {
+      display: none;
+      margin-top: 15px;
+      padding-left: 20px;
+      border-left: 3px solid #00bfff;
+    }
+
+    .subcat {
+      margin-top: 10px;
+      padding-left: 10px;
+      color: #ddd;
+    }
+
+    a.toggle-link {
+      color: #00bfff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    a.toggle-link:hover {
+      color: #1ec5ff;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>My Projects</h1>
-    <p>A collection of things I’ve built or contributed to.</p>
-  </header>
 
-  <main class="projects">
-    <!-- Example Project -->
-    <div class="project-card">
-      <h2>Project Title</h2>
-      <p>Brief description of the project. What it does, what tech was used, etc.</p>
-      <a href="https://github.com/username/project-repo" target="_blank">View on GitHub</a>
+  <h1>My Projects</h1>
+
+  <div class="project">
+    <h2>Circular Motion of Water in Half-Filled Open Barrel</h2>
+    <a class="toggle-link" onclick="toggleBranch()">View Project Description & Details</a>
+    
+    <div id="branch" class="branch">
+      <h3>Setup</h3>
+      <p class="subcat">Description of how the barrel was mounted, sensors used, and experimental control.</p>
+
+      <h3>100 RPM</h3>
+      <p class="subcat">Observations and images from 100 RPM rotation, noting fluid surface shape and behavior.</p>
+
+      <h3>200 RPM</h3>
+      <p class="subcat">Comparison to 100 RPM, including quantitative fluid height differences at edges.</p>
+
+      <h3>500 RPM</h3>
+      <p class="subcat">High-speed behavior, risks of splashing, and centrifugal effects analyzed.</p>
     </div>
+  </div>
 
-    <!-- Add more project-card sections here -->
-  </main>
+  <script>
+    function toggleBranch() {
+      const branch = document.getElementById("branch");
+      branch.style.display = branch.style.display === "block" ? "none" : "block";
+    }
+  </script>
 
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
 </body>
 </html>
+
