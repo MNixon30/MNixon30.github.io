@@ -39,6 +39,25 @@
       line-height: 1.6;
     }
 
+    .image-frame {
+      width: 600px;
+      height: 300px;
+      overflow: hidden;
+      border: 2px solid #444;
+      border-radius: 8px;
+      margin: 10px auto 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
     a.back-link {
       display: inline-block;
       margin-top: 30px;
@@ -61,11 +80,15 @@
 
     <h2>100 RPM</h2>
     <p class="subcat">Fluid motion observed, fluid still within the container.</p>
-    <img src="assets/100RPM.jpg" alt="100 RPM Observation" class="rpm-image" />
+    <div class="image-frame">
+      <img src="assets/100RPM.jpg" alt="100 RPM Observation" />
+    </div>
 
     <h2>140 RPM</h2>
     <p class="subcat">Comparison to 100 RPM, including quantitative fluid height differences at edges.</p>
-    <img src="assets/140RPM.jpg" alt="100 RPM Observation" class="rpm-image" />
+    <div class="image-frame">
+      <img src="assets/140RPM.jpg" alt="140 RPM Observation" />
+    </div>
 
     <h2>500 RPM</h2>
     <p class="subcat">High-speed behavior, risks of splashing, and centrifugal effects analyzed.</p>
@@ -75,3 +98,4 @@
 
 </body>
 </html>
+
