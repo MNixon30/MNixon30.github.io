@@ -1,35 +1,50 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Project Showcase</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <div class="container">
-    <h1>My Projects</h1>
-    <div class="project">
-      <img src="assets/Water Filled Open Container.jpg" 
-           alt="Spinning Water in Barrel" 
-           class="project-image"/>
-      <h2>Circular Motion of Water in Half-Filled Open Barrel</h2>
-      <a class="project-link" href="circular-motion.html">View Full Project Details →</a>
-    </div>
-  </div>
-
-</body>
-</html>
-
-
-.rpm-image {
-      width: 100%;
-      max-width: 300px;
-      height: 100px;
-      object-fit: cover;
-      display: block;
-      margin: 10px auto 30px;
-      border: 2px solid #444;
-      border-radius: 8px;
+/* style.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 40px 20px;
 }
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.project {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 2px solid #444;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #007bff;
+  border-bottom: 1px dashed #007bff;
+}
+
+.project-link:hover {
+  color: #0056b3;
+  border-bottom: 1px solid #0056b3;
+}
+
