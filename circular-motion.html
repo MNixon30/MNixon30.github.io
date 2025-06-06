@@ -43,7 +43,7 @@
       </details>
       <details>
         <summary>2.2 Meshing</summary>
-        <p>
+        <p style="text-align: left;">
           Mesh eslement size: 4e-2m<br>
           Inserted default inflation for the sides<br>
           Added name selections for: Air domain, Water domain, Side wall, Outlet, Bottom wall
@@ -54,7 +54,27 @@
       </details>
       <details>
         <summary>2.3 Fluent Solver</summary>
-        <p>Summarize Fluent settings: model selection (VOF, gravity, rotational reference frame), time step, and boundary conditions.</p>
+        <p style="text-align: left;"><b>Model:</b><br>
+          Use multiphase modeling with air as primary material, add liquid water from fluent database.<br>
+          Standard k-eplison model with EWT and default turblence settings.<br>
+          <br>
+          Use MRF to model barrel motion in steady state.<br>
+          Set the Air_Domain and Water_Domain to <b>frame motion</b> at the desired rpm around the z-axis.<br>
+          Ensure gravity is turned on and it -9.81m/s^2 in the -z direction.<br>
+          <br>
+          <b>Boundry Conditions:</b><br>
+          Outlet: Pressure Outet, 0 gauge pressure, defult gauge pressure in operating conditions.<br>
+          Wall: No motion relative to adjacent cell zone (this means the wall <b>is</b> moving relative to absolute frame.<br>
+          <br>
+          Use default fluent methods (coupled scheme, PRESTO! pressure model with second order momentum)<br>
+          <br>
+          <b>Initilization:</b><br>
+          Standard initialization from all zones.<br>
+          <b>Patch</b> the water domain with 100% (volume fraction) of water.<br>
+          <br>
+          Run the calculation for as many iterations until convergance. <b>NOTE:</b> Often the solution does not reach convergance criteria, possible source of error.
+        </p>
+        
       </details>
     </details>
 
