@@ -84,57 +84,65 @@
 
   <!-- Problem Definition -->
   <details open>
-    <summary>Problem Definition</summary>
+    <summary>1. Problem Definition</summary>
     <details>
-      <summary>Problem</summary>
+      <summary>1.1 Problem</summary>
       <p>Define the scenario and objectives of the simulation, such as expected fluid surface profile.</p>
     </details>
     <details>
-      <summary>Hand Calculations of Expected Results</summary>
+      <summary>1.2 Hand Calculations of Expected Results</summary>
       <p>Include theoretical equations and sample calculations (e.g., parabolic surface shape, free surface height).</p>
     </details>
   </details>
 
   <!-- Setup -->
   <details>
-    <summary>Setup</summary>
+    <summary>2. Setup</summary>
     <details>
-      <summary>Geometry</summary>
+      <summary>2.1 Geometry</summary>
       <p>Explain the 3D or 2D geometry modelled in the CAD or pre-processor.</p>
     </details>
     <details>
-      <summary>Meshing</summary>
+      <summary>2.2 Meshing</summary>
       <p>Describe mesh details: size, refinement, and boundary layer elements if any.</p>
     </details>
     <details>
-      <summary>Fluent Solver</summary>
+      <summary>2.3 Fluent Solver</summary>
       <p>Summarize Fluent settings: model selection (VOF, gravity, rotational reference frame), time step, and boundary conditions.</p>
     </details>
   </details>
 
   <!-- Results -->
   <details>
-    <summary>Results</summary>
+    <summary>3. Results</summary>
     <details>
-      <summary>40 RPM</summary>
+      <summary>3.1 40 RPM</summary>
+      <p>Water begins to circulate with low angular velocity leading to a slight parabolic shape.</p>
       <div class="image-frame">
         <img src="assets/40RPM.jpg" alt="40 RPM Result" />
       </div>
     </details>
     <details>
-      <summary>65 RPM</summary>
+      <summary>3.2 65 RPM</summary>
+      <p>As the speed approches the calculated value of 85rpm from section 1.2, peak water height increases alongside the trough depth.</p>
       <div class="image-frame">
         <img src="assets/65RPM.jpg" alt="65 RPM Result" />
       </div>
     </details>
     <details>
-      <summary>80 RPM</summary>
+      <summary>3.3 80 RPM</summary>
+      <p>The water should begin to reach the edges of the container around 85rpm (see section 1.2). However
+      due to various errors in the model (see section 4) and various assuimptions in the hand calculations (section 1.2),
+      the actual rpm value which would result in overflow should be higher than the hand caluclasted value. </p>
       <div class="image-frame">
         <img src="assets/80RPM.jpg" alt="80 RPM Result" />
       </div>
     </details>
     <details>
-      <summary>100 RPM</summary>
+      <summary>3.4 100 RPM</summary>
+      <p>Running the calculation at 100rpm rersulted in water becomming even closer to overflow. It is noted that the water does not
+      reach the top of the container at this rpm. This indicated that the assumptions in the CFD model do not hold near the boundry between 
+      the container and the outlet(top), resulting in skewed results as the rpm is increased. More details on errors are discussed in section 4.</p>
       <div class="image-frame">
         <img src="assets/100RPM.jpg" alt="100 RPM Result" />
       </div>
@@ -143,7 +151,7 @@
 
   <!-- Errors -->
   <details>
-    <summary>Errors</summary>
+    <summary>4. Errors</summary>
     <p>Discuss any simulation convergence issues, mesh problems, or mismatches between CFD and theoretical predictions.</p>
   </details>
 
