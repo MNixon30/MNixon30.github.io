@@ -8,91 +8,97 @@
 </head>
 <body>
 
-<div class="container">
-  <h1>Circular Motion of Water in a Barrel</h1>
+  <div class="container">
+    <h1>Circular Motion of Water in a Barrel</h1>
 
-  <details open>
-    <summary>1. Problem Definition</summary>
-    <details>
-      <summary>1.1 Problem</summary>
-      <p>This study looks at the effect of rotation on a 1m high, 1m diameter open-top container half-filled with water.</p>
-      <div class="image-frame">
-        <img src="assets/Dig2.jpg" alt="Container Diagram" />
-      </div>
+    <!-- Problem Definition -->
+    <details open>
+      <summary>1. Problem Definition</summary>
+      <details>
+        <summary>1.1 Problem</summary>
+        <p>This study looks at the effect of rotation on a 1m high, 1m diameter open-top container half-filled with water.</p>
+        <div class="image-frame">
+          <img src="assets/Dig2.jpg" alt="Container Diagram" />
+        </div>
+      </details>
+      <details>
+        <summary>1.2 Hand Calculations of Expected Results</summary>
+        <p>Calculation of maximum angular velocity before water begins to spill out of the container.</p>
+        <div class="calc-image">
+          <img src="assets/D1.jpg" alt="Calc 1/2" />
+          <img src="assets/D2.jpg" alt="Calc 2/2" />
+        </div>
+      </details>
     </details>
-    <details>
-      <summary>1.2 Hand Calculations of Expected Results</summary>
-      <p>Calculation of maximum angular velocity before water begins to spill out of the container.</p>
-      <div class="calc-image">
-        <img src="assets/D1.jpg" alt="Calc 1/2" />
-        <img src="assets/D2.jpg" alt="Calc 2/2" />
-      </div>
-    </details>
-  </details>
 
-  <details>
-    <summary>2. Setup</summary>
+    <!-- Setup -->
     <details>
-      <summary>2.1 Geometry</summary>
-      <p>Geometry modeled in ANSYS Spaceclaim by pulling a 1-meter diameter circle sketch to 1m in height. The two fluid zones were split using a plane at z = 0.5m.</p>
-      <div class="image-frame">
-        <img src="assets/Dig1.jpg" alt="Container Geometry" />
-      </div>
+      <summary>2. Setup</summary>
+      <details>
+        <summary>2.1 Geometry</summary>
+        <p>Geometry modeled in ANSYS Spaceclaim by pulling a 1-meter diameter circle sketch to 1m in height. The two fluid zones were split using a plane at z = 0.5m.</p>
+        <div class="image-frame">
+          <img src="assets/Dig1.jpg" alt="Container Geometry" />
+        </div>
+      </details>
+      <details>
+        <summary>2.2 Meshing</summary>
+        <p>Describe mesh details: size, refinement, and boundary layer elements if any.</p>
+      </details>
+      <details>
+        <summary>2.3 Fluent Solver</summary>
+        <p>Summarize Fluent settings: model selection (VOF, gravity, rotational reference frame), time step, and boundary conditions.</p>
+      </details>
     </details>
-    <details>
-      <summary>2.2 Meshing</summary>
-      <p>Describe mesh details: size, refinement, and boundary layer elements if any.</p>
-    </details>
-    <details>
-      <summary>2.3 Fluent Solver</summary>
-      <p>Summarize Fluent settings: model selection (VOF, gravity, rotational reference frame), time step, and boundary conditions.</p>
-    </details>
-  </details>
 
-  <details>
-    <summary>3. Results</summary>
+    <!-- Results -->
     <details>
-      <summary>3.1 40 RPM</summary>
-      <p>Water begins to circulate with low angular velocity leading to a slight parabolic shape.</p>
-      <div class="image-frame">
-        <img src="assets/40RPM.jpg" alt="40 RPM Result" />
-      </div>
+      <summary>3. Results</summary>
+      <details>
+        <summary>3.1 40 RPM</summary>
+        <p>Water begins to circulate with low angular velocity leading to a slight parabolic shape.</p>
+        <div class="image-frame">
+          <img src="assets/40RPM.jpg" alt="40 RPM Result" />
+        </div>
+      </details>
+      <details>
+        <summary>3.2 65 RPM</summary>
+        <p>As the speed approaches 85 RPM, peak water height increases alongside the trough depth.</p>
+        <div class="image-frame">
+          <img src="assets/65RPM.jpg" alt="65 RPM Result" />
+        </div>
+      </details>
+      <details>
+        <summary>3.3 80 RPM</summary>
+        <p>At 80 RPM, water approaches the top edge. Due to model assumptions and simplifications, real overflow occurs above calculated limits.</p>
+        <div class="image-frame">
+          <img src="assets/80RPM.jpg" alt="80 RPM Result" />
+        </div>
+      </details>
+      <details>
+        <summary>3.4 100 RPM</summary>
+        <p>At 100 RPM, overflow nears. Results may diverge due to limitations in boundary modeling.</p>
+        <div class="image-frame">
+          <img src="assets/100RPM.jpg" alt="100 RPM Result" />
+        </div>
+      </details>
     </details>
-    <details>
-      <summary>3.2 65 RPM</summary>
-      <p>As the speed approaches 85 RPM, peak water height increases alongside the trough depth.</p>
-      <div class="image-frame">
-        <img src="assets/65RPM.jpg" alt="65 RPM Result" />
-      </div>
-    </details>
-    <details>
-      <summary>3.3 80 RPM</summary>
-      <p>At 80 RPM, water approaches the top edge. Due to model assumptions and simplifications, real overflow occurs above calculated limits.</p>
-      <div class="image-frame">
-        <img src="assets/80RPM.jpg" alt="80 RPM Result" />
-      </div>
-    </details>
-    <details>
-      <summary>3.4 100 RPM</summary>
-      <p>At 100 RPM, overflow nears. Results may diverge due to limitations in boundary modeling.</p>
-      <div class="image-frame">
-        <img src="assets/100RPM.jpg" alt="100 RPM Result" />
-      </div>
-    </details>
-  </details>
 
-  <details>
-    <summary>4. Errors</summary>
-    <p>Discuss simulation convergence issues, mesh problems, and mismatches between CFD and theory.</p>
-  </details>
+    <!-- Errors -->
+    <details>
+      <summary>4. Errors</summary>
+      <p>Discuss simulation convergence issues, mesh problems, and mismatches between CFD and theory.</p>
+    </details>
 
-  <div style="text-align: center; margin-top: 50px;">
-    <a href="index.html" class="back-link">← Back to Main Projects Page</a>
+    <!-- Back Button -->
+    <div style="text-align: center; margin-top: 50px;">
+      <a href="index.html" class="back-link">← Back to Main Projects Page</a>
+    </div>
   </div>
 
-</div>
 </body>
 </html>
+
 
 
 
