@@ -95,8 +95,8 @@ p {
 }
 
 .calc-image img {
-  width: 300px;
-  height: 200px;
+  width: 600px;
+  height: auto;
   object-fit: cover;
   display: inline-block;
   margin: 10px;
@@ -174,5 +174,33 @@ details + details {
 .back-container {
   text-align: center;
   margin-top: 50px;
+}
+
+.project {
+  text-align: center;
+  margin-bottom: 50px; /* space after each project */
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 15px auto; /* center image with bottom spacing */
+}
+
+.project-link {
+  display: inline-block;
+  color: #ffd699;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  background-color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-link:hover {
+  background-color: #ffbb66;
+  color: #000;
 }
 
