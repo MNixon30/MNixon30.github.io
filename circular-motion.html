@@ -61,17 +61,7 @@
       line-height: 1.6;
     }
 
-   
-    a.back-link {
-      display: inline-block;
-      margin-top: 30px;
-      color: #ffbb66;
-      text-decoration: none;
-    }
-
-    a.back-link:hover {
-      color: #ffd699;
-    }
+    /* REMOVED the embedded a.back-link styles */
 
     p {
       text-align: center;
@@ -88,21 +78,14 @@
     <summary>1. Problem Definition</summary>
     <details>
       <summary>1.1 Problem</summary>
-      <p>This study will look at the effect of rotation on a 1 meter high 1 meter diameter open top container which is half filled with water.</p>
+      <p>This study will look at the effect of rotation on a 1m high 1m diameter open top container which is half filled with water.</p>
       <div class="image-frame">
         <img src="assets/Container.jpg" alt="Container Diagram" />
       </div>
-      <p>The container will be modeled using ANSYS SpaceClaim(Discovery) and meshed using mechanical. The mesh will be brought into Fluent and the simulation will be run with
-        rotational velocities of 40, 65, 80 and 100 rpm. The project aims to determine the angular velocity wherre the water will begin to spill out of the container and 
-        compare the accuracy of the simulation with hand calculations (see 1.2).</p>
     </details>
     <details>
       <summary>1.2 Hand Calculations of Expected Results</summary>
-      <p>The calculation below shows the angular velocity required for the water to spill out of the container.</p>
-      <div class= "project-image">
-        <img src="assets/D1.jpg" alt="Derivation 1/2" />
-        <img src="assets/D2.jpg" alt="Derivation 2/2" />
-      </div>
+      <p>Include theoretical equations and sample calculations (e.g., parabolic surface shape, free surface height).</p>
     </details>
   </details>
 
@@ -135,7 +118,7 @@
     </details>
     <details>
       <summary>3.2 65 RPM</summary>
-      <p>As the speed approches the calculated value of 85rpm from section 1.2, peak water height increases alongside the trough depth.</p>
+      <p>As the speed approaches the calculated value of 85rpm from section 1.2, peak water height increases alongside the trough depth.</p>
       <div class="image-frame">
         <img src="assets/65RPM.jpg" alt="65 RPM Result" />
       </div>
@@ -143,16 +126,16 @@
     <details>
       <summary>3.3 80 RPM</summary>
       <p>The water should begin to reach the edges of the container around 85rpm (see section 1.2). However
-      due to various errors in the model (see section 4) and various assuimptions in the hand calculations (section 1.2),
-      the actual rpm value which would result in overflow should be higher than the hand caluclasted value. </p>
+      due to various errors in the model (see section 4) and various assumptions in the hand calculations (section 1.2),
+      the actual rpm value which would result in overflow should be higher than the hand calculated value. </p>
       <div class="image-frame">
         <img src="assets/80RPM.jpg" alt="80 RPM Result" />
       </div>
     </details>
     <details>
       <summary>3.4 100 RPM</summary>
-      <p>Running the calculation at 100rpm rersulted in water becomming even closer to overflow. It is noted that the water does not
-      reach the top of the container at this rpm. This indicated that the assumptions in the CFD model do not hold near the boundry between 
+      <p>Running the calculation at 100rpm resulted in water becoming even closer to overflow. It is noted that the water does not
+      reach the top of the container at this rpm. This indicates that the assumptions in the CFD model do not hold near the boundary between 
       the container and the outlet(top), resulting in skewed results as the rpm is increased. More details on errors are discussed in section 4.</p>
       <div class="image-frame">
         <img src="assets/100RPM.jpg" alt="100 RPM Result" />
@@ -173,4 +156,5 @@
 </div>
 </body>
 </html>
+
 
