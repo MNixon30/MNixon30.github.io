@@ -130,4 +130,57 @@ a.back-link:hover {
   color: #000;
 }
 
+/* Center the details dropdowns and style them */
+details {
+  background-color: #2a2a2a;
+  margin: 15px auto;
+  border-radius: 12px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(255, 187, 102, 0.2);
+  max-width: 700px;
+  border: 1px solid #444;
+}
+
+summary {
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffd699;
+  text-align: center;
+}
+
+/* Style nested dropdowns */
+details details {
+  background-color: #1b1b1b;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+details details summary {
+  font-size: 1.1rem;
+  color: #ffddaa;
+  text-align: left;
+}
+
+/* Center all <p> text in dropdowns */
+details p {
+  text-align: center;
+}
+
+/* Consistent margins inside nested content */
+.subcat {
+  margin-top: 10px;
+  color: #dddddd;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Add spacing between top-level dropdowns */
+details + details {
+  margin-top: 25px;
+}
+
+
 
