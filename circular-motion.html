@@ -72,39 +72,66 @@
 </head>
 <body>
 
-  <div class="container">
-    <h1>Circular Motion of Water in Half-Filled Open Barrel</h1>
+<div class="container">
+    <h1>Circular Motion of Water in a Barrel</h1>
 
-    <h2>Setup</h2>
-    <p class="subcat">Description of CFD setup in ANSYS Fluent.</p>
+    <!-- Problem Definition -->
+    <details>
+      <summary>Problem Definition</summary>
+      <details>
+        <summary>Problem</summary>
+        <p>Define the scenario and objectives of the simulation, such as expected fluid surface profile.</p>
+      </details>
+      <details>
+        <summary>Hand Calculations of Expected Results</summary>
+        <p>Include theoretical equations and sample calculations (e.g., parabolic surface shape, free surface height).</p>
+      </details>
+    </details>
 
-    <h2>40 RPM</h2>
-    <p class="subcat">Fluid motion observed, fluid still within the container.</p>
-    <div class="image-frame">
-      <img src="assets/40RPM.jpg" alt="40 RPM Observation" />
-    </div>
+    <!-- Setup -->
+    <details>
+      <summary>Setup</summary>
+      <details>
+        <summary>Geometry</summary>
+        <p>Explain the 3D or 2D geometry modelled in the CAD or pre-processor.</p>
+      </details>
+      <details>
+        <summary>Meshing</summary>
+        <p>Describe mesh details: size, refinement, and boundary layer elements if any.</p>
+      </details>
+      <details>
+        <summary>Fluent Solver</summary>
+        <p>Summarize Fluent settings: model selection (VOF, gravity, rotational reference frame), time step, and boundary conditions.</p>
+      </details>
+    </details>
 
-    <h2>65 RPM</h2>
-    <p class="subcat">Comparison to 40 RPM, increased fluid height at edges.</p>
-    <div class="image-frame">
-      <img src="assets/65RPM.jpg" alt="65 RPM Observation" />
-    </div>
+    <!-- Results -->
+    <details>
+      <summary>Results</summary>
+      <details>
+        <summary>40 RPM</summary>
+        <img src="assets/40rpm.png" alt="40 RPM Result" />
+      </details>
+      <details>
+        <summary>65 RPM</summary>
+        <img src="assets/65rpm.png" alt="65 RPM Result" />
+      </details>
+      <details>
+        <summary>80 RPM</summary>
+        <img src="assets/80rpm.png" alt="80 RPM Result" />
+      </details>
+      <details>
+        <summary>100 RPM</summary>
+        <img src="assets/100rpm.png" alt="100 RPM Result" />
+      </details>
+    </details>
 
-    <h2>80 RPM</h2>
-    <p class="subcat">High-speed behavior, risks of splashing, fluid approching outlet (top) boundry.</p>
-    <div class="image-frame">
-      <img src="assets/80RPM.jpg" alt="80 RPM Observation" />
-    </div>
-
-    <h2>100 RPM</h2>
-    <p class="subcat">Fluid still within container, numerical approximations break down at this point due to limited backflow on the top outlet,
-    adhesion layers, discritization errors, fluid viscosity and wal adhesion interations.</p>
-    <div class="image-frame">
-      <img src="assets/100RPM.jpg" alt="100 RPM Observation" />
-    </div>
-    <a class="back-link" href="index.html">← Back to Projects</a>
+    <!-- Errors -->
+    <details>
+      <summary>Errors</summary>
+      <p>Discuss any simulation convergence issues, mesh problems, or mismatches between CFD and theoretical predictions.</p>
+    </details>
   </div>
-
 </body>
 </html>
 
