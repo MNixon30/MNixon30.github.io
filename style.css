@@ -79,8 +79,8 @@ a.back-link:hover {
 }
 
 .image-frame {
-  width: 300px;
-  height: 300px;
+  width: 200px;           /* smaller frame */
+  height: 200px;
   overflow: hidden;
   border: 2px solid #444;
   border-radius: 8px;
@@ -91,7 +91,7 @@ a.back-link:hover {
 }
 
 .image-frame img {
-  width: 70%; /* make image smaller */
+  width: 70%;             /* smaller image inside the smaller frame */
   height: auto;
   object-fit: contain;
   display: block;
