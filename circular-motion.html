@@ -11,12 +11,11 @@
 <div class="container">
   <h1>Circular Motion of Water in a Barrel</h1>
 
-  <!-- Problem Definition -->
   <details open>
     <summary>1. Problem Definition</summary>
     <details>
       <summary>1.1 Problem</summary>
-      <p>This study will look at the effect of rotation on a 1m high 1m diameter open top container which is half filled with water.</p>
+      <p>This study looks at the effect of rotation on a 1m high, 1m diameter open-top container half-filled with water.</p>
       <div class="image-frame">
         <img src="assets/Dig2.jpg" alt="Container Diagram" />
       </div>
@@ -31,15 +30,13 @@
     </details>
   </details>
 
-  <!-- Setup -->
   <details>
     <summary>2. Setup</summary>
     <details>
       <summary>2.1 Geometry</summary>
-      <p>Geometry modeled in ANSYS Spaceclaim by pulling a 1 meter diameter circle sketch to 1m in height. The 2 fluid zones were split using a plane passing at z = 0.5m
-      so that fluent can fill half the container with water later in the simulation.</p>
+      <p>Geometry modeled in ANSYS Spaceclaim by pulling a 1-meter diameter circle sketch to 1m in height. The two fluid zones were split using a plane at z = 0.5m.</p>
       <div class="image-frame">
-        <img src="assets/Dig1.jpg" alt="Container Diagram" />
+        <img src="assets/Dig1.jpg" alt="Container Geometry" />
       </div>
     </details>
     <details>
@@ -52,7 +49,6 @@
     </details>
   </details>
 
-  <!-- Results -->
   <details>
     <summary>3. Results</summary>
     <details>
@@ -64,35 +60,30 @@
     </details>
     <details>
       <summary>3.2 65 RPM</summary>
-      <p>As the speed approaches the calculated value of 85rpm from section 1.2, peak water height increases alongside the trough depth.</p>
+      <p>As the speed approaches 85 RPM, peak water height increases alongside the trough depth.</p>
       <div class="image-frame">
         <img src="assets/65RPM.jpg" alt="65 RPM Result" />
       </div>
     </details>
     <details>
       <summary>3.3 80 RPM</summary>
-      <p>The water should begin to reach the edges of the container around 85rpm (see section 1.2). However
-      due to various errors in the model (see section 4) and various assumptions in the hand calculations (section 1.2),
-      the actual rpm value which would result in overflow should be higher than the hand calculated value. </p>
+      <p>At 80 RPM, water approaches the top edge. Due to model assumptions and simplifications, real overflow occurs above calculated limits.</p>
       <div class="image-frame">
         <img src="assets/80RPM.jpg" alt="80 RPM Result" />
       </div>
     </details>
     <details>
       <summary>3.4 100 RPM</summary>
-      <p>Running the calculation at 100rpm resulted in water becoming even closer to overflow. It is noted that the water does not
-      reach the top of the container at this rpm. This indicates that the assumptions in the CFD model do not hold near the boundary between 
-      the container and the outlet(top), resulting in skewed results as the rpm is increased. More details on errors are discussed in section 4.</p>
+      <p>At 100 RPM, overflow nears. Results may diverge due to limitations in boundary modeling.</p>
       <div class="image-frame">
         <img src="assets/100RPM.jpg" alt="100 RPM Result" />
       </div>
     </details>
   </details>
 
-  <!-- Errors -->
   <details>
     <summary>4. Errors</summary>
-    <p>Discuss any simulation convergence issues, mesh problems, or mismatches between CFD and theoretical predictions.</p>
+    <p>Discuss simulation convergence issues, mesh problems, and mismatches between CFD and theory.</p>
   </details>
 
   <div style="text-align: center; margin-top: 50px;">
