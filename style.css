@@ -182,5 +182,8 @@ details + details {
   margin-top: 25px;
 }
 
-
+.back-container {
+  text-align: center;
+  margin-top: 50px;
+}
 
