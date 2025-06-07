@@ -114,7 +114,19 @@
     <!-- Errors -->
     <details>
       <summary>4. Errors</summary>
-      <p>Errors</p>
+      <p>Various errors can lead to inconsistant results compared to hand calculations. Also, it is important to note that both the solver and hand calculations made assumptions towards the fdluid behaivor.
+        For instance, hand calculations assumed a lack of turblence (no radial or vertical velocity component), while fluent used a k-e standard turblence model.
+        <br>
+        Various errors in the fluent model include:<br>
+        Viscous effects neglected which impact the results at high rpm (i.e when the water reaches the surface).<br>
+        Discretization error, particularly at wall bouundries where the no slip condition drives the rotational motion of the water.<br>
+        Different turblence models can impact the results of the solution.<br>
+        <br>
+        <b>Further Study:</b><br>
+        Solution had trouble converging below the defult residules of 1e-3. In particular, continuity only converged to 1.2173e-01. The nature of the simulation is unique however since no water
+        should be entering/exiting the container at low rpm.</p>
+
+      
     </details>
 
     <!-- Back Button -->
