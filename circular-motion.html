@@ -120,11 +120,28 @@
         Various errors in the fluent model include:<br>
         Viscous effects neglected which impact the results at high rpm (i.e when the water reaches the surface).<br>
         Discretization error, particularly at wall bouundries where the no slip condition drives the rotational motion of the water.<br>
-        Different turblence models can impact the results of the solution.<br>
+        Different turbulence models can impact the results of the solution.<br>
         <br>
         <b>Further Study:</b><br>
         Solution had trouble converging below the defult residules of 1e-3. In particular, continuity only converged to 1.2173e-01. The nature of the simulation is unique however since no water
-        should be entering/exiting the container at low rpm.</p>
+        should be entering/exiting the container at low rpm. The residual plot for the simulation run at 80rpm is shown below.</p>
+
+      <div class="res-image">
+        <img src="assets/Dig4.jpg" alt="Res Diagram" />
+      </div>
+      <br>
+      <p>In general, the effects of different turbulence models and solution methods/controls should be used to attempt to control the convergance. Additionally, a mesh refinment study should be conducted to test the
+        accuracy of the mesh. </p>
+    </details>
+
+    <!-- Conclusion -->
+    <details>
+      <summary>5. Conclusion</summary>
+      <p>The results of the simulation are consistant with what is intuitively expected, which is, the water created a parabolic arc that increased in depth as the wall speed was run faster.
+        The water started to approach the edge at 80-100 rpm. This is relativly consistant with the hand calculated result of 85rpm. It is logical that the real result should be greater thanm the hand calculated due to the turbulence
+        employed in the CFD model which intropduces slight radial and vertical velocity components. Finally, the continuity error in the simulation only droped to 1.2173e-01 which is far above the convergance criteria of 1e-3.
+        Therefore, the solution methods and controls, alongside vareious turbulence models and the mesh, should be adjusted to fine tune the results in a more extensive simulation.
+      </p>
 
       
     </details>
