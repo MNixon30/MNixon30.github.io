@@ -178,16 +178,17 @@ details + details {
 
 .project {
   text-align: center;
-  margin-bottom: 50px; /* space after each project */
+  margin-bottom: 50px;
 }
 
 .project-image {
-  max-width: 100%;
-  height: auto;
+  max-width: 300px;     /* limit image width */
+  width: 100%;          /* responsive scaling */
+  height: auto;         /* maintain aspect ratio */
   display: block;
-  margin: 0 auto 15px auto; /* center image with bottom spacing */
+  margin: 0 auto 15px auto;
+  border-radius: 8px;   /* optional: soft edges */
 }
-
 .project-link {
   display: inline-block;
   color: #ffd699;
