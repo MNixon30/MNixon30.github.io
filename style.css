@@ -182,13 +182,14 @@ details + details {
 }
 
 .project-image {
-  max-width: 300px;     /* limit image width */
-  width: 100%;          /* responsive scaling */
-  height: auto;         /* maintain aspect ratio */
+  width: auto;
+  height: 200px;               /* Set specific height */
   display: block;
   margin: 0 auto 15px auto;
-  border-radius: 8px;   /* optional: soft edges */
+  border-radius: 8px;
+  object-fit: cover;           /* Ensures image fills space without distortion */
 }
+
 .project-link {
   display: inline-block;
   color: #ffd699;
