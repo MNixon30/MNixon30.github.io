@@ -219,35 +219,48 @@ details + details {
 }
 
 
-/* Hero/Cover Section */
-.hero {
-  position: relative;
-  height: 40vh; /* approx. 40% of viewport height */
-  background-image: url('assets/cover.jpg'); /* update path to your image */
+/* Cover section with background image */
+.cover-section {
+  height: 40vh;
+  background-image: url('assets/cover.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  border-bottom: 2px solid #333;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.hero-overlay {
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
-  padding: 40px;
-  border-radius: 12px;
+  position: relative;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
-.hero-title {
+/* Optional dark overlay for readability */
+.cover-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  border-radius: 0 0 12px 12px;
+}
+
+/* Text centered in cover */
+.cover-text {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+
+.cover-text h1 {
   font-size: 3rem;
-  color: #ffd699;
-  margin: 0;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px #000;
 }
 
-.hero-subtitle {
-  font-size: 1.3rem;
-  color: #ffddaa;
-  margin-top: 10px;
+.cover-text p {
+  font-size: 1.2rem;
+  color: #ffd699;
+  text-shadow: 1px 1px 4px #000;
 }
