@@ -279,8 +279,12 @@ details + details {
 }
 
 .image-cap figcaption {
-  margin-top: 8px;        /* space above caption */
-  font-size: 0.9rem;      /* slightly smaller font size */
-  color: #555;            /* muted dark gray text */
-  font-style: italic;     /* italic style for caption */
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: #444;           /* slightly darker for emphasis */
+  font-style: italic;
+  font-weight: 500;      /* medium weight for clearer label */
+  text-transform: uppercase;  /* classic figure label style */
+  letter-spacing: 0.05em;     /* spacing for a refined look */
+  text-align: center;
 }
