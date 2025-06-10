@@ -292,12 +292,13 @@ details + details {
 .note-text {
   font-size: 0.85rem;
   font-style: italic;
-  color: #555;
+  color: #ddd; /* light gray for good contrast */
   text-align: center;
   margin-top: 10px;
   margin-bottom: 20px;
-  background-color: #f9f9f9;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle light overlay */
   padding: 6px 12px;
-  border-left: 3px solid #999;
+  border-left: 3px solid #aaa; /* softer contrast border */
   display: inline-block;
+  border-radius: 4px;
 }
