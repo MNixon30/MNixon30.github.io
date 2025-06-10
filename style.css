@@ -266,7 +266,7 @@ details + details {
 }
 
 .image-cap {
-  max-width: 600px;       /* limits width of image and caption container */
+  max-width: 400px;       /* limits width of image and caption container */
   margin: 20px auto;      /* centers container with vertical spacing */
   text-align: center;     /* center-aligns content */
 }
