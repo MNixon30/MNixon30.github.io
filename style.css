@@ -265,10 +265,22 @@ details + details {
   text-shadow: 1px 1px 4px #000;
 }
 
-.image-frame figcaption {
-  margin-top: 8px;
-  font-size: 0.9rem;
-  color: #555;
-  font-style: italic;
-  text-align: center;
+.image-cap {
+  max-width: 600px;       /* limits width of image and caption container */
+  margin: 20px auto;      /* centers container with vertical spacing */
+  text-align: center;     /* center-aligns content */
+}
+
+.image-cap img {
+  width: 100%;            /* responsive image width */
+  height: auto;           /* maintain aspect ratio */
+  border-radius: 8px;     /* optional: rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* subtle shadow */
+}
+
+.image-cap figcaption {
+  margin-top: 8px;        /* space above caption */
+  font-size: 0.9rem;      /* slightly smaller font size */
+  color: #555;            /* muted dark gray text */
+  font-style: italic;     /* italic style for caption */
 }
