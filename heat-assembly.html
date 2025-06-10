@@ -21,7 +21,7 @@
     
     <p>The system consists of:</p>
     <ul>
-      <li>Four ARM SoC silicon chips mounted on an FR4 PCB</li>
+      <li>Four ARM SoC 15W silicon chips mounted on an FR4 PCB</li>
       <li>An enclosure made of aluminum</li>
       <li>Two fans arranged symmetrically in the center of the enclosure</li>
       <li>Four hexagonal aluminum supports holding the components</li>
@@ -146,11 +146,33 @@
         
       </details>
       <details>
-        <summary>2.3 Solver Setup</summary>
-        <p style="text-align: left;">
-          <!-- Solver/modeling details and parameters -->
+        <summary>2.3 Solver Setup (1)</summary>
+        <p>Listed below is all the important solver setup's for a base simulation. The solver setup will be modified to assess various other factors such as, natural convection, radiation, and heat flux through walls.
+          The changes in the solver due to these factors will be listed in the results section.
+          <!-- Solver/modeling details and parameters , /define/mesh-interfaces/one-to-one-pairing-->
         </p>
+        
+        <ul>
+      <li>Viscous Model - Realizable k-e with EWF.</li>
+      <li>Energy - On</li>
+      <li>Cell Zone Conditions - Chip1/2 - Source term on with 33333333 W/m^3 (found by dividing 15W by the volume of the chip) </li>
+      <li>Inlet - Velocity inlet with speed 2.453m/s (found using volume flowrate), specify inlet temperature to 20C.</li>
+      <li>Outlet - Defult pressure outler, p = 0, defult backflow temperature</li>
+      <li>Type /define/mesh-interfaces/one-to-one-pairing into the TUI to create 1-to-1 contacts (better for the initialization)</li>
+      <li>Keep default solution methods and controls</li>
+      <li>Hybrid initilization and run the calculation for 200 iterations</li>
+        </ul>
+        
       </details>
+
+      <details>
+        <summary>2.4 Material Defination</summary>
+        <p>Defining the materials gets its own section in the report due to the anisotropic nature of FR4 and temperature dependant properties of silicon.</p>
+
+
+        
+      </details>
+
     </details>
 
     <!-- Results -->
