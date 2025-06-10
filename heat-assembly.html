@@ -99,6 +99,7 @@
       <summary>2. Setup</summary>
       <details>
         <summary>2.1 Geometry</summary>
+        <p>The geometry for this problem was created using a combination of Spaceclaim (Discovery) to create the parts and assemble them and Design Modeler to create trhe enclosure and inlets/outlets. CATIA V5 was also used in the making of all drawings to describe the geometry.
         <p>Inlet, Outlet & Box Geometry</p>
         <p class="note-text">As mentioned in section 1.1 the geometry is split in half to reduce the computational expense of the simulation. A symmatry boundry condition will be applied to the interior face of the geometry.</p>
         <div class="image-cap">
@@ -122,9 +123,16 @@
       
       <details>
         <summary>2.2 Meshing</summary>
-        <p style="text-align: left;">
-          <!-- Describe meshing details -->
+        <p>
+          The meshing was initially done in ANSYS mechanical. The following mesh sizings were used.
         </p>
+        <ul>
+      <li>Heat Sink - Body Sizing = 1.5e-3m</li>
+      <li>Chip - Body Sizing = 1e-3m</li>
+      <li>PCB - Body Sizing = 3e-3m</li>
+      <li>Supports - Body Sizing = 1.5e-3m</li>
+      <li>General Mesh Sizing = 3e-3m</li>
+        </ul>
         <div class="image-frame">
           <img src="<!-- assets/your-mesh.jpg -->" alt="Mesh Diagram" />
         </div>
