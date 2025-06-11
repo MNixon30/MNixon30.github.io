@@ -234,12 +234,16 @@
           <p>Observations:<br>
             Despite the contours of temperature, the tempature is almost uniform accross the heat chip, reaching a maximum temperature of 303.67C, this temperature is too high and is an early indicator the forced convection of this heated assembly is insufficient.</p>
         </div>
+        <br>
+        <p><b>Upwind Heat Sink Tempature</b></p>
          <div class="image-cap">
           <img src="assets/Dia21.jpg" alt="Temperature of Upwind Heat Sink" />
           <figurecaption>Temperature of Upwind Heat Sink</figurecaption>\
           <p>Observations:<br>
             The temperature is slightly non-uniform ranging from 126.4C-122.0C, however, this small difference in tempature from the base to the fins of the heat sink may indicate a larger heat sink must be sued to have greater cooling effectivness.</p>
         </div>
+        <br>
+        <p><b>Downwind Heat Sink Tempature</b></p>
          <div class="image-cap">
           <img src="assets/Dia22.jpg" alt="Temperature of Downwind Heat Chip" />
           <figurecaption>Temperature of Downwind Heat Chip</figurecaption>\
@@ -248,6 +252,8 @@
           With temperatures ranging from 295.8C-302.8C this could cause significant creep or deformation in the aluminium heat sink since it is above 0.4 times the general melting temperature of aluminium.
           These are unsafe temperatures.</p>
         </div>
+        <br>
+        <p><b>Outlet Temperatures</b></p>
          <div class="image-cap">
           <img src="assets/Dia23.jpg" alt="Outlet Temperatures" />
           <figurecaption>Outlet Temperatures</figurecaption>\
@@ -255,6 +261,8 @@
             Hotter air is dispensed through the lower outlets which is expected since they are more level with the heat chips. The temperature of the air is not at a dangerous level when exiting the system.
           This indicates that majority of the heat produced freom the chips does not transfer to the air, indicaitng a failure in the forced convection (i.e better convection is required.)</p>
         </div>
+        <br>
+        <p><b>PCB Temperature</b></p>
          <div class="image-cap">
           <img src="assets/Dia24.jpg" alt="Temperature of PCB" />
           <figurecaption>Temperature of PCB</figurecaption>\
@@ -263,27 +271,32 @@
           contact resistance between the two components.<br>
           These temperatures are unsafe for the FR4 material since they are beyond the glass transition temperature as specified in section 2.4.</p>
         </div>
+        <br>
+        <p><b>Upwind Support Temperature</b></p>
          <div class="image-cap">
           <img src="assets/Dia25.jpg" alt="Temperature of Upwind Support" />
           <figurecaption>Temperature of Upwind Support</figurecaption>\
           <p>Observations:<br>
             Uniform low temperature of 24C, safe.</p>
         </div>
+        <br>
+         <p><b>Downwind Support Temperature</b></p>
          <div class="image-cap">
           <img src="assets/Dia26.jpg" alt="Temperature of Downwind Support" />
           <figurecaption>Temperature of Downwind Support</figurecaption>\
           <p>Observations:<br>
             Uniform temperature of around 64C, safe for aluminium to operate under these temperatures.</p>
         </div>
+        <br>
+        <p><b>Wall Temperatures</b></p>
          <div class="image-cap">
           <img src="assets/Dia27.jpg" alt="Wall Temperatures" />
           <figurecaption>Wall Temperatures</figurecaption>\
           <p>Observations:<br>
             High temperatures where the supports are located due to one to one conduction. Since the high temperatures are extreamly localized, perhaps it will result in deformation overtime, however, all the temperatures are within safe limits for aluminium.</p>
         </div>
-
-        
       </details>
+      
       <details>
         <summary>3.2 Effect of Natural Convection</summary>
         <p>In order to simulate natural convection the fluent solver must be adjusted to account for density changes in air due to temperature changes (ideal gas), the effects of gravity must also be turned on.
