@@ -240,7 +240,8 @@
       <details>
         <summary>3.2 Effect of Natural Convection</summary>
         <p>In order to simulate natural convection the fluent solver must be adjusted to account for density changes in air due to temperature changes (ideal gas), the effects of gravity must also be turned on.
-        The TUI commands used for this setup are listed below.<br>
+        The TUI commands used for this setup are listed below.<br> </p>
+        <p style="text-align: left;">
           /define/operating-conditions/gravity yes<br>
           0 0 -9.81<br>
           /define/materials/edit air<br>
@@ -251,6 +252,7 @@
           viscosity constant 1.7894e-05<br>
           yes
         </p>
+       
         
         <div class="image-frame">
           <img src="<!-- assets/result2.jpg -->" alt="Result 2 Image" />
