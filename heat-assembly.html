@@ -209,7 +209,7 @@
       <summary>3. Results</summary>
       
       <details>
-        <summary>3.1 Basic Simulation</summary>
+        <summary>3.1 Initial Simulation</summary>
         <p class="note-text">All legends are disaplayed in local coordinate systems to emphasize tempature differences with contours.</p>
         <p><b>Thermal Flow Through Chips/Heat Sinks</b></p>
         <div class="image-cap">
@@ -454,17 +454,25 @@
     <details>
       <summary>4. Errors and Considerations</summary>
       <p style="text-align: left;">
-        <!-- Discussion of errors, assumptions, or limitations -->
+        Various errors which should be studied for future consideration include:
       </p>
-      <div class="res-image">
-        <img src="<!-- assets/error-image.jpg -->" alt="Error Diagram" />
-      </div>
+      <ul>
+      <li>Discretization error: Mesh refinement should be implimented, particularly around the heat sinks, chips, PCB, supports and outlet. </li>
+      <li>Linearization error: Residuals should be dropped from 1e-3 to 1e-6 to compare and validate the results.</li>
+      <li>Contact resistance: Contact rersistance should be added between PCB, chips and heat sinks, this would result in cooler components.</li>
+      <li>Radiation: This project assumed convection/conduction are the primary heat transfer mechanisms, however a S2S or similar radiation model should be used to confirm these assumptions.</li>
+      <li>Turblence model: Different turblence models should be used to validate the model, such as k-omega.</li>
+      
+        </ul>
+   
     </details>
 
     <!-- Conclusion -->
     <details>
       <summary>5. Conclusion</summary>
-      <p><!-- Summary conclusions from your project --></p>
+      <p>The forced convection through the heat assembly yielded chip temperatures of 300C. This is an unacceptable temperature and indicates that faster/more fans should be implimented to improve convection.
+      The effects of natural convection interfered with the forced convection, resulting in higher chip/heat sink temperatures. Heat transfer through the aluminium container slightly reduced the component temperatures but not significantly.
+      Mesh refinement, contact resistance, and radiation should be analysed in further studys to improve simulation accuracy.</p>
     </details>
 
     <!-- Back Button -->
