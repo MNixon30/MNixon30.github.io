@@ -18,7 +18,10 @@
         <summary>1.1 Problem</summary>
         <p>2 Fluids, water and oil are passed through a t-junction with mixing slots indented within the pipe. This simulation aims to determine how well theses substances mix over time (transient). 
         An external shaking acceleration will also be added (for fun) using UDF's to see how shaking of the juction can effect mixing while the fluids are flowing.</p>
-        
+        <div class = 'image-cap'>
+          <img src = "assets/Di2.jpg" alt = "Diagram">
+          <figurecaption>T-Junction Diagram</figurecaption>
+        </div>
       </details>
     </details>
 
@@ -28,19 +31,22 @@
       <details>
         <summary>2.1 Geometry</summary>
         <p>The geometry used is shoown in the image below.</p>
-        
-        <div class="image-frame">
-          <img src="<!-- assets/your-geometry.jpg -->" alt="Geometry Diagram" />
-        </div>
+        <p style="text-align: left;"> Water inlet diameter: 20mm<br>
+          Oil inlet diameter: 15mm<br>
+          Outlet diameter: 20mm
+          Cut depth: ~5mm
+          Cut Angle: ~45 degrees </p>
       </details>
       <details>
         <summary>2.2 Meshing</summary>
         <p style="text-align: left;">
-          <!-- Describe meshing details -->
+          Mesh Sizing: 1e-3m
         </p>
-        <div class="image-frame">
-          <img src="<!-- assets/your-mesh.jpg -->" alt="Mesh Diagram" />
+        <div class="image-cap">
+          <img src="assets/Di3.jpg" alt="Mesh Diagram" />
+          <figurecaption>Mesh Diagram of Pipe</figurecaption>
         </div>
+        <p class = "note-text"> Note that mesh refinment and inflation is not done to lower the size of the transient simulation. In reality, the mesh should be refined towards the walls.</p>
       </details>
       <details>
         <summary>2.3 Solver Setup</summary>
