@@ -302,3 +302,13 @@ details + details {
   display: inline-block;
   border-radius: 4px;
 }
+
+.video-frame {
+  margin: 20px auto;
+  max-width: 640px;
+  border: 2px solid #444;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.3);
+}
+
